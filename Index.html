@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Reportes - BI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Reportes</h1>
+        <form id="reportForm">
+            <label for="dataInput">Ingrese los datos para el reporte (Formato: JSON):</label>
+            <textarea id="dataInput" rows="6" cols="50" placeholder='Ejemplo: [{"nombre": "Juan", "ventas": 2000}, {"nombre": "Ana", "ventas": 3000}]'></textarea><br>
+            <button type="submit">Generar Reporte</button>
+        </form>
+
+        <div id="reportOutput">
+            <h2>Reporte Generado:</h2>
+            <table id="reportTable"></table>
+            <button id="downloadCSVBtn" style="display: none;">Descargar CSV</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
